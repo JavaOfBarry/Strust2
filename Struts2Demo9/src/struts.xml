@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+
+<struts>
+	<include file="struts-default.xml" />
+	<package name="struts2" extends="struts-default">
+		<action name="selectUser" class="com.wwb.domain.UserAction"
+			method="selectUser">
+			<result name="success">Result.jsp</result>
+			
+		</action>
+		<action name="selectThings" class="com.wwb.domain.UserAction"
+			method="selectThings">
+			<result name="success">ResultThings.jsp</result>
+			
+		</action>
+		
+        <action name="selectUserJd" class="com.wwb.domain.UserAction"
+			method="selectUserJd">
+			<result name="success">ResultJd.jsp</result>
+		</action>
+        <action name="quit" class="com.wwb.domain.UserAction"
+			method="quit">
+			<result name="success">Login.jsp</result>
+		</action>
+		<action name="insertUser" class="com.wwb.domain.UserAction"
+			method="insertUser">
+			<result name="success" type="redirectAction">
+				selectUser
+			</result>
+		</action>
+
+		<action name="deleteUser" class="com.wwb.domain.UserAction"
+			method="DeleteUser">
+			<result name="success" type="redirectAction">
+				selectUser
+			</result>
+		</action>
+	<action name="deleteThings" class="com.wwb.domain.UserAction"
+		method="DeleteThings">
+		<result name="success" type="redirectAction">
+			selectThings
+		</result>
+	</action>
+		
+		<action name="selectUpdateUser" class="com.wwb.domain.UserAction"
+			method="selectUpdateUser">
+			<result name="success">Update.jsp</result>
+		</action>
+	   <action name="selectUpdateThings" class="com.wwb.domain.UserAction"
+			method="selectUpdateThings">
+			<result name="success">UpdateThings.jsp</result>
+		</action>
+		<action name="updateUser" class="com.wwb.domain.UserAction"
+			method="updateUser">
+			<result name="success" type="redirectAction">
+				selectUser
+			</result>
+		</action>
+		<action name="updateThings" class="com.wwb.domain.UserAction"
+			method="updateThings">
+			<result name="success" type="redirectAction">
+				selectThings
+			</result>
+		</action>
+		<action name="selectlogin" class="com.wwb.domain.UserAction"
+			method="selectUser">
+			<result name="success">Login.jsp</result>
+		</action>		
+		<action name="login" class="com.wwb.domain.UserAction"
+			method="login">
+			<result name="success">Success.jsp</result>
+			<result name="success1">Success1.jsp</result>
+			<result name="false">False.jsp</result>
+		</action>
+		<action name="addCar" class="com.wwb.domain.UserAction"
+			method="addCar">
+			<result name="success" type="redirectAction">
+				selectUserJd
+			</result>
+			<result name="false">Car.jsp</result>
+			<result name="login">Login.jsp</result>
+		</action>
+		
+		<action name="deleteCar" class="com.wwb.domain.UserAction"
+			method="deleteCar">
+			<result name="success">Car.jsp</result>
+		</action>
+	</package>
+	
+	    
+	
+	<constant name="struts.custom.i18n.resources" value="message" /> 
+    
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    
+    <!-- 上传过程中临时文件存放目录 -->
+    
+     <package name="struts_upload" extends="struts-default">
+
+	<interceptors>
+		<interceptor name="nullId" class="com.wwb.domain.validators_Insert" />
+		<interceptor-stack name="testId">
+			<interceptor-ref name="nullId" />
+			<!--struts2默认自带的拦截器 -->
+			<interceptor-ref name="defaultStack" />
+		</interceptor-stack>
+	</interceptors> 
+        <action name="upload"
+            class="com.wwb.domain.UserAction" method="insertUserAndPic">
+            <result name="success" type="redirectAction">
+				selectThings
+			</result>
+            <result name="input">/index.jsp</result>
+            <result name="false">/InsertFalse.jsp</result>
+    
+             
+            
+            <!-- 定义文件上传拦截器 -->
+            <interceptor-ref name="fileUpload">
+                <!-- 设置文件上传大小 -->
+                <param name="maximumSize">409600</param>
+                <!-- 设置文件上传类型 
+                <param name="allowedTypes">
+                    application/vnd.ms-powerpoint
+                </param>
+                -->
+            </interceptor-ref>
+            
+            <interceptor-ref name="testId"/>
+            <!-- 自定义了拦截器后必手动定义默认的拦截器，否则默认的拦截器不会被执行 -->
+              
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+        </action>        
+    </package>
+</struts>    
