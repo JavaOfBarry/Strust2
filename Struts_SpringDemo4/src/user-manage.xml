@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <package name="user-manage" extends="struts-default">
+        <!-- 定义处理用户请求的Action，该Action的class属性不是实际处理类
+            , 而是Spring容器中的Bean实例-->
+        <action name="userManage" class="UsermanageAction" method="UserSelect">
+            <!-- 为两个逻辑视图配置视图页面 -->
+            <result name="success">/Result.jsp</result>
+        </action>
+        
+        <action name="deleteUser" class="UsermanageAction" method="deleteUser">
+            <!-- 为两个逻辑视图配置视图页面 -->
+            <result name="success" type="redirectAction">userManage</result>
+        </action>
+        
+          <action name="insertUser" class="UsermanageAction" method="insertUser">
+            <!-- 为两个逻辑视图配置视图页面 -->
+            <result name="success" type="redirectAction">userManage</result>
+             <result name="false" >/error.jsp</result>
+        </action>
+        
+        <action name="selectUpdateUser" class="UsermanageAction" method="selectUpdateUser">
+            <!-- 为两个逻辑视图配置视图页面 -->
+             <result name="success" >/Update.jsp</result>
+        </action>
+        
+        <action name="updateUser" class="UsermanageAction" method="updateUser">
+            <!-- 为两个逻辑视图配置视图页面 -->
+            <result name="success" type="redirectAction">userManage</result>
+             <result name="false" >/error.jsp</result>
+        </action>
+    </package>
+
+</struts>    

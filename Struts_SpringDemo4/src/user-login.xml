@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <package name="login" extends="struts-default">
+        <!-- 定义处理用户请求的Action，该Action的class属性不是实际处理类
+            , 而是Spring容器中的Bean实例-->
+        <action name="loginPro" class="loginAction">
+            <!-- 为两个逻辑视图配置视图页面 -->
+            <result name="error">/error.jsp</result>
+            <result name="success">/Success.jsp</result>
+        </action>
+        <!-- 让用户直接访问该应用时列出所有视图页面 -->
+        <action name="*">
+            <result>/{1}.jsp</result>
+        </action>
+        
+        <action name="quit" class="loginAction"
+			method="quit">
+			<result name="success">login.jsp</result>
+		</action>
+    </package>
+
+</struts>    
