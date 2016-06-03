@@ -37,7 +37,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<s:form action="selectThings" method="post">
 			<s:submit value="商品管理" />
 		</s:form>
-		<s:form action="selectUserJd" method="post">
+		<s:form action="selectThingsDJ" method="post">
 			<s:submit value="京东前世" />
 		</s:form>
 		<s:form action="quit" method="post">

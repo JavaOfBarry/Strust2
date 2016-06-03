@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
- 
-<!-- 配置了系列常量 -->
-    <constant name="struts.i18n.encoding" value="GBK" />
-    <constant name="struts.devMode" value="true" />
-  <!--  <constant name="struts.configuration.xml.reload" value="true" />-->
-    
-    <include file="user-login.xml"></include>
-    <include file="user-manage.xml"></include>
 
+	<!-- 配置了系列常量 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.devMode" value="true" />
+	<!-- <constant name="struts.configuration.xml.reload" value="true" /> -->
+	<constant name="struts.custom.i18n.resources" value="message" /> 
+
+	<include file="user-login.xml"></include>
+	<include file="user-manage.xml"></include>
+	<include file="things-manage.xml"></include>
 </struts>    

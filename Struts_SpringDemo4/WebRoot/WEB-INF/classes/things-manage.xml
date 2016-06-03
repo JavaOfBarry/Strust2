@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="things-manage" extends="struts-default">
+		<!-- 定义处理用户请求的Action，该Action的class属性不是实际处理类 , 而是Spring容器中的Bean实例 -->
+		<action name="selectThings" class="ThingsmanageAction" method="selectThings">
+			<!-- 为两个逻辑视图配置视图页面 -->
+
+			<result name="successJD">/ResultJd.jsp</result>
+			<result name="success">/ResultThings.jsp</result>
+			<result name="false">/error1.jsp</result>
+		</action>
+
+
+		<action name="insertThings" class="ThingsmanageAction" method="insertThings">
+			<!-- 为两个逻辑视图配置视图页面 -->
+			<result name="success" type="redirectAction">selectThings
+			</result>
+			<result name="false">/error1.jsp</result>
+
+			<!-- 定义文件上传拦截器 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 设置文件上传大小 -->
+				<param name="maximumSize">409600</param>
+				<!-- 设置文件上传类型 <param name="allowedTypes"> application/vnd.ms-powerpoint 
+					</param> -->
+			</interceptor-ref>
+			<!-- 自定义了拦截器后必手动定义默认的拦截器，否则默认的拦截器不会被执行 -->
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+
+
+		<action name="deleteThings" class="ThingsmanageAction" method="deleteThings">
+			<!-- 为两个逻辑视图配置视图页面 -->
+			<result name="success" type="redirectAction">selectThings
+			</result>
+			<result name="false">/error1.jsp</result>
+		</action>
+		<action name="selectUpdateThings" class="ThingsmanageAction"
+			method="selectUpdateThings">
+			<!-- 为两个逻辑视图配置视图页面 -->
+			<result name="success">/UpdateThings.jsp</result>
+			<result name="false">/error1.jsp</result>
+		</action>
+		<action name="updateThings" class="ThingsmanageAction" method="updateThings">
+			<!-- 为两个逻辑视图配置视图页面 -->
+			<result name="success" type="redirectAction">selectThings
+			</result>
+			<result name="false">/error1.jsp</result>
+		</action>
+		<action name="selectThingsDJ" class="ThingsmanageAction"
+			method="selectThingsDJ">
+			<!-- 为两个逻辑视图配置视图页面 -->
+
+			<result name="success">/ResultJd.jsp</result>
+			<result name="false">/error1.jsp</result>
+		</action>
+
+		<action name="addCar" class="ThingsmanageAction" method="addCar">
+			<!-- 为两个逻辑视图配置视图页面 -->
+			<result name="success" type="redirectAction">
+				selectThingsDJ
+			</result>
+			<result name="login">/login.jsp</result>
+			<result name="false">/error1.jsp</result>
+		</action>
+		<action name="deleteCar" class="ThingsmanageAction" method="deleteCar">
+			<!-- 为两个逻辑视图配置视图页面 -->
+			<result name="success">Car.jsp</result>
+		</action>
+
+	</package>
+
+</struts>    

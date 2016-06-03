@@ -1,20 +1,20 @@
-<%@ page contentType="text/html; charset=GBK" language="java" errorPage="" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" errorPage="" %>
 <%@taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>ตวยผาณรๆ</title>
+    <title>็ปๅฝ•้กต้ข</title>
 </head>
 <body>
-<h3>ำรปงตวยผ</h3>
+<h3>็”จๆท็ปๅฝ•</h3>
 <s:form action="loginPro">
-    <s:textfield name="username" label="ำรปงร๛"/>
-    <s:password name="password" label="รÜย๋"/>
+    <s:textfield name="username" label="็”จๆทๅ"/>
+    <s:password name="password" label="ๅฏ็ "/>
     <tr align="center">
         <td colspan="2">
-        <s:submit value="ตวยผ" theme="simple"/>
-        <s:reset value="ึุษ่" theme="simple"/>
+        <s:submit value="็ปๅฝ•" theme="simple"/>
+        <s:reset value="้่ฎพ" theme="simple"/>
         </td>
     </tr>
 </s:form>

@@ -52,6 +52,19 @@
         <property name="personDAO" ref="personDAO"></property>
     </bean>
 
+  <!-- model2 -->
+
+	<bean id="things" class="com.wwb.entity.Things">
+	</bean>
+    <bean id="ThingsDAO" class="com.wwb.dao.ThingsDaoImpl">
+        <property name="conn" ref="conn"></property>
+    </bean>
+    <bean id="myServiceThings" class="com.wwb.service.MyServiceThingsImpl">
+        <property name="ThingsDAO" ref="ThingsDAO"></property>
+    </bean>
+
+
+
    
 
     <!-- controller -->
@@ -63,6 +76,10 @@
     
     <bean id="UsermanageAction" class="com.wwb.action.UserManageAction" scope="prototype"  >
         <property name="ms" ref="myService"></property>
+    </bean>
+    
+    <bean id="ThingsmanageAction" class="com.wwb.action.ThingsManageAction" scope="prototype"  >
+        <property name="ms" ref="myServiceThings"></property>
     </bean>
 
     <!--

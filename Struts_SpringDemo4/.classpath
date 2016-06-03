@@ -5,30 +5,48 @@
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/freemarker-2.3.19.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/struts2-core-2.3.4.1.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/struts2-spring-plugin-2.3.4.1.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/xwork-core-2.3.4.1.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/ognl-3.0.5.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/aopalliance-1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-aop-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-beans-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-context-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-core-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-expression-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-jdbc-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-orm-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-test-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-tx-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/spring-web-3.2.1.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/javassist-3.17.1-GA.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/commons-lang3-3.1.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/commons-io-2.0.1.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/ssh2_test/ssh2_test/WebContent/WEB-INF/lib/commons-dbcp.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/.metadata/.me_tcat/webapps/Struts2Demo9/WEB-INF/lib/mysql-connector-java-3.1.12-bin.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/.metadata/.me_tcat/webapps/ssh2_test/WEB-INF/lib/commons-pool.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/MyEclipse 10/.metadata/.me_tcat/webapps/ssh2_test/WEB-INF/lib/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/avro-1.6.3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-pool.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/freemarker-2.3.19.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hibernate-core-4.1.9.Final.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/javassist-3.17.1-GA.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jboss-logging-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/lucene-core-3.6.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java-3.1.12-bin.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ognl-3.0.5.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/paranamer-2.3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/snappy-java-1.0.4.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-aop-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-beans-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-context-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-expression-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-jdbc-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-orm-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-test-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-tx-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-web-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-core-2.3.4.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-spring-plugin-2.3.4.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xwork-core-2.3.4.1.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
